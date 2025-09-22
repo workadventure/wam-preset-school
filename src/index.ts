@@ -1,5 +1,4 @@
-/// <reference types="@workadventure/iframe-api-typings" />
-
+/// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
@@ -21,7 +20,4 @@ WA.onInit().then(() => {
     bootstrapExtra().then(() => {
         console.log('Scripting API Extra ready');
     }).catch(e => console.error(e));
-
 }).catch(e => console.error(e));
-
-export {};
